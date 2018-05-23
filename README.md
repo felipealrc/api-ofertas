@@ -73,7 +73,7 @@ Cria ou atualiza as ofertas no Buscapé. As ofertas devem ser enviadas em lotes,
 |groupId|	Não | Agrupador de ofertas (Deverá ser usado para agrupar variações diferentes de uma oferta </br> Exemplo: </br>Tenis xxx Branco (sku=100 - groupId=1) </br>Tenis xxx Preto  (sku=200 - groupId=1) </br>Tenis xxx Azul   (sku=300 - groupId=1) | String(10) |
 |sku| Sim |	ID da oferta | String(240) |
 |title | Sim | Título da oferta| String(240) |
-|barcode| Não | Código de barras da oferta | String |
+|barcode| Não | Código de barras da oferta </br> **Não serão aceitos: </br>Caracteres especiais exeto _ (Underline) e - (Hifén);</br>Letras acentuadas** | String |
 |category|	Sim | Categoria que a oferta se encontra </br>(Exemplo: Eletrônicos>TV) | String(255) |
 |declaredPrice| Não | Preço declarado para seguro dos correios | Double |
 |description| Não |	Descrição/Sinopse da oferta, aceita tags HTML: &lt;p&gt;, &lt;br&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;li&gt;, &lt;div&gt;, &lt;span&gt; </br> **Não serão aceitos script e/ou css inline, ou qualquer outra tag não listada acima** | String(4000) |
